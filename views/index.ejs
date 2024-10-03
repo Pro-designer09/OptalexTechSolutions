@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Optalex tech solution</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  d-flex">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./images/optaLogoPng.png" alt="logo" height="40px" />  Optalex
+          Tech Solutions</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-us">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="banner">
+      <div class="container">
+        <div class="text-info text-start mx-5">
+          <h2>Welcome to</h2>
+          <h1>Optalex Tech Solutions</h1>
+          <h3>you deserve to be <span>compensated</span></h3>
+          <p>
+            Have you ever suffered a problem caused by a defective or contaminated
+            product? <br />
+            Or have you ever suffered a problem caused by the use of Social Media?
+          </p>
+          <button class="main-btn"><a href="#form">Apply Now</a></button>
+          
+        </div>
+      </div>
+    </main>
+
+    <section id="form" class="form">
+      <p>Let's seek Justice Together!</p>
+      <h1>Fill the form</h1>
+      <div class="container">
+        <div class="row justify-content-center bg-secondary text-white p-4">
+          <div class="col-xl-10">
+            <form
+              action="/submit"
+              method="POST"
+              class="needs-validation "
+              novalidate
+            >
+              <div class="row g-4">
+                <div class="col-xl-6">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="first_name"
+                    class="form-control"
+                    placeholder="First Name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter First name</div>
+                </div>
+                <div class="col-xl-6">
+                  <input
+                    type="text"
+                    id="lname"
+                    name="last_name"
+                    class="form-control"
+                    placeholder="Last Name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter last Name</div>
+                </div>
+                <div class="col-xl-6">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="E-mail"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter email</div>
+                </div>
+                <div class="col-xl-6">
+                  <input
+                    type="number"
+                    id="number"
+                    name="number"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter number</div>
+                </div>
+                <div class="col-xl-4">
+                  <label for="dob" class="form-label">Enter Age</label>
+
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter Age</div>
+                </div>
+                <div class="col-xl-8">
+                  <label class="form-label">Gender</label>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="male"
+                      required
+                    />
+                    <label class="form-check-label" for="male">Male</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                      required
+                    />
+                    <label class="form-check-label" for="female">Female</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="other"
+                      value="other"
+                      required
+                    />
+                    <label class="form-check-label" for="other">Other</label>
+                  </div>
+
+                  <div class="invalid-feedback">Please select your gender</div>
+                </div>
+
+                <!-- <div class="col-md-4">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity"name="city" required>
+                  <div class="invalid-feedback">Please Enter your City</div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                  <select
+                    id="inputCountry"
+                    name="country"
+                    class="form-select"
+                    required
+                  >
+                    <option>Select Country</option>
+                    <div class="invalid-feedback">Please select Country</div>
+                  </select>
+                </div> -->
+
+                <div class="col-md-4">
+
+                  <input
+                    id="inputState"
+                    name="state"
+                    class="form-control"
+                    placeholder="State"
+                    required
+                  >
+                    <div class="invalid-feedback">Please select State</div>
+                </input>
+                </div>
+
+                <!-- <div class="col-md-4">
+                  <select
+                    id="inputCity"
+                    name="city"
+                    class="form-select"
+                    required
+                  >
+                    <option>Select City</option>
+                    <div class="invalid-feedback">Please select City</div>
+                  </select>
+                </div> -->
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputZip"
+                    name="zipcode"
+                    placeholder="Zip-Code"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter zipcode</div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck2"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck2">
+                      Agree to terms and conditions <a href="/policy" id="policy">privacy policy</a>
+                    </label>
+                  </div>
+                </div>
+
+                <input type="hidden" id="uuid" name="uuid_no" />
+
+                <input type="submit" value="submit" class="btn btn-primary" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <p class="question">
+        " Have you ever suffered a problem caused by a defective or contaminated
+        product? Or have you ever suffered a problem caused by the use of Social
+        Media?
+      </p>
+
+      <h1>you deserve to be compensated</h1>
+
+      <div class="container">
+        <div
+          class="row images justify-content-center align-items-center g-2 mt-5"
+        >
+          <div class="col mb-3"><img src="./images/1.png" alt="" /></div>
+          <div class="col mb-3"><img src="./images/2.png" alt="" /></div>
+          <div class="col mb-3"><img src="./images/3.png" alt="" /></div>
+          <div class="col mb-3"><img src="./images/4.png" alt="" /></div>
+          <div class="col mb-3"><img src="./images/5.png" alt="" /></div>
+          <div class="col mb-3"><img src="./images/6.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us">
+      <h1>Why Choose us ?</h1>
+      <h3>
+        NO WIN, NO FEE, TOP ATTORNEYS, FREE CONSULTATION, OUTSTANDING RESULTS,
+        DEDICATED TO JUSTICE
+      </h3>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-start g-2 mt-5">
+          <div class="col-12 content-box">
+            <h4 class="title">Ease to Use</h4>
+            <p>CLick on Apply Now and fill the form to get started!</p>
+            <button class="main-btn"><a href="#form">Apply Now</a></button>
+          </div>
+          <div class="col-12 content-box">
+            <h4 class="title">Professional Services</h4>
+            <p>
+              A mass tort is a civil action where many people are harmed by the
+              same act or omission. The individual victims have claims against
+              the same defendants, and the cases can be combined in a
+              multi-district litigation
+            </p>
+          </div>
+          <div class="col-12 content-box">
+            <h4 class="title">Support</h4>
+            <p>
+              CWe are here to support individuals who have faced challenges due
+              to faulty products or water contamination, leading to serious
+              illnesses caused by corporate negligence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="container mt-5">
+        <div class="row mt-5 align-items-start justify-content-center">
+          <div class="col-lg-6">
+            <img src="./images/optaLogoPng.png" alt=""/>
+          </div>
+          <div class="col-lg-6 right-box">
+            <h3 class="title">Our Mission</h3>
+            <p>
+              (optalex tech solution pvt ltd) A mass tort is a civil action in
+              which many individuals are harmed by the same act or omission.
+              Individual victims have claims against the same defendants, and
+              cases can be consolidated into multidistrict litigation. The
+              comprehensive nature of these torts often makes it impractical for
+              each victim to individually seek legal redress. Therefore, it is
+              common for these cases to be consolidated into a single
+              proceeding, known as multidistrict litigation. This allows for a
+              more efficient and coordinated approach to addressing the claims
+              of all affected parties.​In these cases, it is essential to have
+              the support of attorneys specializing in mass tort litigation.
+              These professionals have the expertise and resources necessary to
+              effectively represent the interests of the victims, ensuring they
+              receive fair and adequate compensation for the harm suffered.​Mass
+              tort litigation plays a crucial role in seeking justice and
+              holding responsible parties accountable for causing widespread
+              harm. By uniting the voices of victims, these legal processes not
+              only seek individual redress but also aim to prevent future harm
+              and protect the rights of affected communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container mt-5 justify-content-center">
+        <div class="text-center">
+          <h1>Attorney advertising</h1>
+          <p class="add">
+            ATTORNEY ADVERTISING ‐ The information on this website is for
+            general information purposes only. Nothing on this site should be
+            taken as legal advice for any individual case or situation. Prior
+            results do not guarantee a similar outcome By clicking above, I
+            agree to receive telephone calls and text messages at the telephone
+            number provided above/below (including any mobile number provided)
+            by Us. I understand that consent is not a condition to receive the
+            services and that I may revoke my consent at any time. I also have
+            read and agree to your Privacy Policy.
+          </p>
+
+          <p class="copy">
+            &copy; 2024,Optalex Tech Solution Pvt ltd-<a
+              class="nav-link"
+              href="#"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', (event) => {
+        const uuid = uuidv4();
+        document.getElementById("uuid").value = uuid;
+      });
+
+
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+
+     
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

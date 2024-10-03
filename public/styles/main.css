@@ -1,0 +1,262 @@
+html{
+  scroll-behavior: smooth;
+  transition: all .3s ease;
+}
+.banner {
+    height: 90vh;
+    width: 100%;
+    background: url('/images/blindJustice.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  @media(max-width:600px){
+    .banner{
+      background-position: bottom 50px right -120px;
+
+    }
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+  }
+
+  .banner .text-info{
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+ 
+  
+  .text-info h2 {
+    position: relative;
+    color: #d19a5b;
+    font-size: 2rem;
+    font-weight: 300;
+
+  }
+  .text-info h1{
+    font-size: 5rem;
+    color: white;
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+  }
+
+  .text-info h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 80px;
+    color: white;
+
+  }
+  .text-info h3 span{
+    color: #d19a5b;
+  }
+
+  .main-btn {
+    padding: 5px 10px;
+    background-color: #d19a5b;
+  }
+
+  .main-btn a{
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+ .main-btn:hover{
+    background: yellowgreen;
+    
+  }
+
+  .text-info p{
+    color: white;
+    margin: 30px 0px;
+    font-size: 1.2rem;
+   
+  }
+
+  @media(max-width: 600px){
+
+    .text-info h2{
+      margin-top: 30px;
+    }
+   
+    .text-info h1{
+      font-size: 2.5rem;
+    }
+
+    .text-info h3{
+      font-size: 1.5rem;
+    }
+    .text-info h2{
+      font-size: 1.3rem;
+    }
+
+    .text-info p{
+      font-size: 1rem;
+    }
+  }
+
+  .form{
+    margin-top: 50px;
+    min-height: 50vh;
+  }
+  
+  .form h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .form p{
+    text-align: center;
+  }
+
+  
+
+  .content{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #111;
+    overflow: hidden;
+  }
+
+  .content .question{
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+
+  .content h1{
+    color: #d19a5b;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .images img{
+    
+    max-height: 250px;
+    border-image: linear-gradient(to right, #d19a5b 0%, #fff 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    transition: all ease .3s ;
+    
+  }
+
+  #policy{
+color:#d19a5b;
+  }
+
+  .images img:hover{
+    transform: scale(1.2);
+    
+}
+
+  @media(max-width: 600px){
+    .content h1{
+      font-size: 2rem;
+    }
+
+    .images img{
+      margin-left: 50px;
+      height: auto;
+    }
+    
+  }
+  
+
+
+  .why-us{
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .why-us h1{
+    margin-bottom: 30px;
+  }
+
+  .content-box{
+    
+    border-image: linear-gradient(to right, #d19a5b 0%, #fff 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 30px;
+    text-align: center;
+    margin-left:0px;
+  }
+  .mission img{
+    height: 600px;
+    width: 600px;
+  }
+
+
+  @media(max-width: 600px){
+    .why-us h3{
+      font-size: 1rem;
+    }
+
+    .mission img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+
+  
+
+
+  .mission p{
+    line-height: 30px;
+  }
+
+  
+
+
+ .footer{
+  min-height: 50vh;
+  background-color: #111;
+ }
+
+ .footer h1{
+  color: #d19a5b;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+ }
+
+ .footer p{
+  color: white;
+  letter-spacing: 2px;
+
+ }
+
+ @media(max-width: 600px){
+  .footer p{
+    text-align: start;
+    margin-left: 20px;
+  }
+ }
+
+ .footer .copy {
+  letter-spacing: normal;
+  font-size: .8rem;
+ }
+
+ .privacy p{
+  color: #444;
+ }
+
+
+

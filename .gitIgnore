@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Coverage directory
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Dependency lock files (if using only npm or yarn)
+yarn.lock
+package-lock.json
+
+# Temporary files
+*.tmp
+*.swp
+
+# Docker files
+docker-compose.override.yml
