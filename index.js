@@ -1,5 +1,14 @@
-const express = require("express");
+const session = require('express-session')
+const express = require('express');
 const app = express();
+
+app.use(session({
+  secret: 'your-secret-key',
+  resave: false,
+  saveUninitialized: true,
+}));
+
+
 const bodyparser = require("body-parser");
 const admin_route = require("./routes/admin");
 
@@ -9,26 +18,22 @@ const conn = require("./src/db/conn");
 const port = process.env.PORT || 3000;
 
 
-app.use("/admin", admin_route);
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use("/admin", admin_route);
  
+
+
 
 app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
 app.post("/submit", (req, res) => {
-  // conn.query("select * from company", (err, result) => {
-  //   if (err) {
-  //     res.send("error");
-  //   }
-  //   else{
-  //       res.send(result)
-  //   }
-  // });
+
 
   const { uuid_no, first_name, last_name, email, number, age, gender,  state, zipcode} =
     req.body;
